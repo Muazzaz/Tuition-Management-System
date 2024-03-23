@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trust Tution</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- section 1-Header-->
+    <section class="Section-1">
+      <div class="header">
+        <nav
+          class="navbar sticky-lg-top navbar-expand-lg navbar-light bg-transparent"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <div class="d-flex">
+                <img src="./image/brand.png" alt="Trust Tution" />
+                <span>
+                  <p class="first_title text-decoration-underline">
+                    Trust Tution BD
+                  </p>
+
+                  <p class="second_title">
+                    Simply Search for Tutors and tutions
+                  </p>
+                </span>
+              </div>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="ms-auto"></div>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./search.html">Search Tutor</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="./request.html">Request Tutor</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="./tution.html">Tutions</a>
+                </li>
+
+                <li class="nav-item1">
+                  <div class="nav-link ms-5" href="#">
+                    <a href="./signin.html">Login</a> OR
+                    <a href="./signup.html">Registration</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <section class="section-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <form
+              name="searchtutors"
+              id="searchtutors"
+              method="post"
+              action="search_result.html"
+            >
+              <div class="row">
+                <div class="d-flex flex-row justify-content-center mt-3">
+                  <div class="d-flex">
+                    <img
+                      src="https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-search-vector-icon-png-image_696422.jpg"
+                      width="25"
+                      height="40"
+                      alt=""
+                    />
+                    <h3 class="col-lg-12">Request For Tutors</h3>
+                  </div>
+                </div>
+
+                <div class="col-lg-12 mt-3" id="form1">
+                  <div class="row mt-3">
+                    <div class="col-lg-6 mt-3 mb-4">
+                      <select
+                        class="form-select form-select-sm form1 mt-1"
+                        id="form"
+                        aria-label=".form-select-lg example"
+                      >
+                        <option>--Districts--</option>
+                        <option value="15022014215269">BAGERHAT</option>
+                        <option value="15022014218853">BANDARBAN</option>
+                        <option value="15022014221200">BARGUNA</option>
+                        <option value="15022014220385">BARISAL</option>
+                        <option value="15022014218657">BHOLA</option>
+                        <option value="15022014216164">BOGRA</option>
+                        <option value="15022014223008">BRAHMANBARIA</option>
+                        <option value="15022014223275">CHANDPUR</option>
+                        <option value="15022014220253">
+                          CHAPAI NABABAGANJ
+                        </option>
+                        <option value="15022014219846">CHITTAGONG</option>
+                        <option value="15022014220961">CHUADANGA</option>
+                        <option value="15022014214578">COMILLA</option>
+                        <option value="15022014216181">COX'S BAZAR</option>
+                        <option value="15022014219906">DHAKA</option>
+                        <option value="15022014217791">DINAJPUR</option>
+                        <option value="15022014220532">FARIDPUR</option>
+                        <option value="15022014221239">FENI</option>
+                        <option value="15022014220388">GAIBANDHA</option>
+                        <option value="15022014222087">GAZIPUR</option>
+                        <option value="15022014219722">GOPALGONJ</option>
+                        <option value="15022014219353">HABIGANJ</option>
+                        <option value="15022014216669">JAMALPUR</option>
+                        <option value="15022014213648">JESSORE</option>
+                        <option value="15022014218496">JHALOKATI</option>
+                        <option value="15022014216174">JHENAIDAHA</option>
+                        <option value="15022014220870">JOYPURHAT</option>
+                        <option value="15022014222679">KHAGRACHHARI</option>
+                        <option value="15022014217785">KHULNA</option>
+                        <option value="15022014217117">KISHORGONJ</option>
+                        <option value="15022014217868">KURIGRAM</option>
+                        <option value="15022014218642">KUSHTIA</option>
+                        <option value="15022014219071">LAKSHMIPUR</option>
+                        <option value="15022014215652">LALMONIRHAT</option>
+                        <option value="15022014213995">MADARIPUR</option>
+                        <option value="15022014222279">MAGURA</option>
+                        <option value="15022014220661">MANIKGONJ</option>
+                        <option value="15022014215609">MAULVI BAZAR</option>
+                        <option value="15022014213934">MEHERPUR</option>
+                        <option value="15022014222073">MUNSHIGONJ</option>
+                        <option value="15022014220624">MYMENSINGH</option>
+                        <option value="15022014215852">NAOGAON</option>
+                        <option value="15022014216324">NARAIL</option>
+                        <option value="15022014223344">NARAYANGONJ</option>
+                        <option value="15022014214065">NARSINGDI</option>
+                        <option value="15022014215614">NATORE</option>
+                        <option value="15022014214884">NETROKONA</option>
+                        <option value="15022014223077">NILPHAMARI</option>
+                        <option value="15022014220857">NOAKHALI</option>
+                        <option value="15022014222071">PABNA</option>
+                        <option value="15022014223602">PANCHAGARH</option>
+                        <option value="15022014217521">PATUAKHALI</option>
+                        <option value="15022014218462">PIROJPUR</option>
+                        <option value="15022014217848">RAJBARI</option>
+                        <option value="15022014220090">RAJSHAHI</option>
+                        <option value="15022014215219">RANGAMATI</option>
+                        <option value="15022014221229">RANGPUR</option>
+                        <option value="15022014216937">SATKHIRA</option>
+                        <option value="15022014215661">SHARIATPUR</option>
+                        <option value="15022014220806">SHERPUR</option>
+                        <option value="15022014222923">SIRAJGANJ</option>
+                        <option value="15022014217943">SUNAMGANJ</option>
+                        <option value="15022014220731">SYLHET</option>
+                        <option value="15022014219780">TANGAIL</option>
+                        <option value="15022014223052">THAKURGAON</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-6 mt-3 mb-4">
+                      <select
+                        class="form-select form-select-sm form1 mt-1"
+                        id="form"
+                        aria-label=".form-select-lg example"
+                      >
+                        <option selected>--Area--</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+
+                    <div class="col-lg-6 mb-4">
+                      <select
+                        class="form-select form-select-sm form1 mt-1"
+                        id="form"
+                        aria-label=".form-select-lg example"
+                      >
+                        <option selected>--Medium--</option>
+                        <option value="5082014205030">Bangla Medium</option>
+                        <option value="5082014200140">English Medium</option>
+                        <option value="5082014201040">Arabic Medium</option>
+                        <option value="7062018063436">English Version</option>
+                        <option value="29082018090397">
+                          Extra Curricular Activities
+                        </option>
+                        <option value="29082018090570">
+                          Language Learning
+                        </option>
+                        <option value="29082018084547">
+                          Computer Learning
+                        </option>
+                      </select>
+                    </div>
+
+                    <div class="col-lg-6 mb-4">
+                      <select
+                        class="form-select form-select-sm form1 mt-1"
+                        id="form"
+                        aria-label=".form-select-lg example"
+                      >
+                        <option selected>--Class--</option>
+                        <option value="29082018089212">Applications</option>
+                        <option value="29082018091602">Database</option>
+                        <option value="29082018087349">Networking</option>
+                        <option value="29082018088715">Operating System</option>
+                        <option value="29082018085162">Photo Editing</option>
+                        <option value="29082018092087">Programming</option>
+                        <option value="29082018088262">Web Design</option>
+                        <option value="29082018085575"></option>
+                        <option value="29082018091716">Art/Drawing</option>
+                        <option value="29082018089128">Instrument</option>
+                        <option value="29082018092158">Music</option>
+                        <option value="29082018089171">Others</option>
+                        <option value="29082018090325">
+                          Exam(IELTS, TOFEL)
+                        </option>
+                        <option value="29082018089620">Foreign Language</option>
+                        <option value="5082014203400">O Level</option>
+                        <option value="5082014208720">Standard I</option>
+                        <option value="5082014211310">Standard II</option>
+                        <option value="5082014205520">Standard III</option>
+                        <option value="5082014205350">Standard IV</option>
+                        <option value="5082014207390">Standard IX</option>
+                        <option value="5082014207320">Standard V</option>
+                        <option value="5082014202790">Standard VI</option>
+                        <option value="5082014206420">Standard VII</option>
+                        <option value="5082014208830">Standard VIII</option>
+                        <option value="5082014202710">Fazil</option>
+                        <option value="5082014209660">Kamil</option>
+                        <option value="13112018123139">Quran</option>
+                        <option value="22112015137725">Nursery</option>
+                        <option value="5082014202990">Class VIII</option>
+                        <option value="5082014204510">Class I</option>
+                        <option value="5082014210040">Class II</option>
+                        <option value="5082014204440">Class III</option>
+                        <option value="5082014204230">Class IV</option>
+                        <option value="5082014208630">Class IX</option>
+                        <option value="5082014209980">Class V</option>
+                        <option value="5082014202050">Class VI</option>
+                        <option value="5082014202200">Class VII</option>
+                        <option value="5082014201630">Class X</option>
+                        <option value="5082014202810">H.S.C</option>
+                        <option value="5082014204270">S.S.C</option>
+                        <option value="5082014211940">A Level</option>
+                        <option value="23112015031071">Honors</option>
+                        <option value="7062018076043">Class I</option>
+                        <option value="7062018076638">Class II</option>
+                        <option value="7062018077186">Class III</option>
+                        <option value="7062018079825">Class IV</option>
+                        <option value="7062018081807">Class IX</option>
+                        <option value="7062018074989">Class V</option>
+                        <option value="7062018078691">Class VI</option>
+                        <option value="7062018077355">Class VII</option>
+                        <option value="7062018073145">Class VIII</option>
+                        <option value="7062018078080">Class X</option>
+                        <option value="7062018076487">Class XI (HSC)</option>
+                        <option value="7062018080288">Class XII (HSC)</option>
+                      </select>
+                    </div>
+
+                    <div class="col-lg-6 mb-4">
+                      <select
+                        class="form-select form-select-sm form1 mt-1"
+                        id="form"
+                        aria-label=".form-select-lg example"
+                      >
+                        <option selected>--Subject--</option>
+                        <option value="29082018086464">3D Design</option>
+                        <option value="29082018087025">Adobe Photoshop</option>
+                        <option value="29082018088087">Android</option>
+                        <option value="29082018086293">Android</option>
+                        <option value="29082018088314">ASP</option>
+                        <option value="29082018093048">AutoCAD</option>
+                        <option value="29082018087628">C</option>
+                        <option value="29082018091703">C#</option>
+                        <option value="29082018093137">C++</option>
+                        <option value="29082018086230">CISCO</option>
+                        <option value="29082018088446">Flash</option>
+                        <option value="29082018089315">Illustrator</option>
+                        <option value="29082018087679">iOS</option>
+                        <option value="29082018094238">iOS</option>
+                        <option value="29082018086065">Java</option>
+                        <option value="29082018086025">Juniper</option>
+                        <option value="29082018085806">LAN</option>
+                        <option value="29082018085241">Light Room</option>
+                        <option value="29082018091670">Linux</option>
+                        <option value="29082018094663">
+                          Mobile Application
+                        </option>
+                        <option value="29082018090474">MS Access</option>
+                        <option value="29082018085106">MS Office</option>
+                        <option value="29082018091082">MS SQL</option>
+                        <option value="29082018090460">My SQL</option>
+                        <option value="29082018092118">Oracle</option>
+                        <option value="29082018088136">Other</option>
+                        <option value="29082018089754">PHP</option>
+                        <option value="29082018091603">Python</option>
+                        <option value="29082018087597">Solaries</option>
+                        <option value="29082018087862">Ubuntu</option>
+                        <option value="29082018085477">Unix</option>
+                        <option value="29082018094506">VB</option>
+                        <option value="29082018089360">Video Editing</option>
+                        <option value="29082018085072">WAN</option>
+                        <option value="29082018092237">Web Application</option>
+                        <option value="29082018086368">Website</option>
+                        <option value="29082018087052">Windows Desktop</option>
+                        <option value="29082018085056">Windows Server</option>
+                        <option value="29082018098722">Band</option>
+                        <option value="29082018097212">Body Building</option>
+                        <option value="29082018094604">Boxing</option>
+                        <option value="29082018094455">Business</option>
+                        <option value="29082018092788">Dance</option>
+                        <option value="29082018095814">Drums</option>
+                        <option value="29082018096748">Folk Music</option>
+                        <option value="29082018095133">General Drawing</option>
+                        <option value="29082018095777">General Music</option>
+                        <option value="29082018087057">Guitar</option>
+                        <option value="29082018097005">Hand Writing</option>
+                        <option value="29082018092102">Karate</option>
+                        <option value="29082018090623">Management</option>
+                        <option value="29082018097947">Modern</option>
+                        <option value="29082018086288">Oil Painting</option>
+                        <option value="29082018088225">Organ</option>
+                        <option value="29082018086169">Others</option>
+                        <option value="29082018088308">Piano</option>
+                        <option value="29082018092423">Pop</option>
+                        <option value="29082018095269">Saxophone</option>
+                        <option value="29082018089914">Trumpet</option>
+                        <option value="29082018088631">Violin</option>
+                        <option value="29082018099624">Vocal Lesson</option>
+                        <option value="29082018091291">Water Color</option>
+                        <option value="29082018091631">Yoga</option>
+                        <option value="29082018092057">Arabic</option>
+                        <option value="29082018087092">Chinese</option>
+                        <option value="29082018088069">Dutch</option>
+                        <option value="29082018093108">English</option>
+                        <option value="29082018085673">French</option>
+                        <option value="29082018093816">German</option>
+                        <option value="29082018093279">GMAT</option>
+                        <option value="29082018092715">GRE</option>
+                        <option value="29082018090267">Greek</option>
+                        <option value="29082018088585">Hindi</option>
+                        <option value="29082018092539">IELTS</option>
+                        <option value="29082018089821">Italian</option>
+                        <option value="29082018093623">Japanese</option>
+                        <option value="29082018087434">Korean</option>
+                        <option value="29082018087395">Portuguese</option>
+                        <option value="29082018087897">Russian</option>
+                        <option value="29082018094987">SAT</option>
+                        <option value="29082018089946">Spanish</option>
+                        <option value="29082018094937">Spoken English</option>
+                        <option value="29082018086089">Thai</option>
+                        <option value="29082018092013">TOFEL</option>
+                        <option value="5082014220410">Eassy Writing</option>
+                        <option value="26012015236946">Quran Reading</option>
+                        <option value="5082014217380">General Math</option>
+                        <option value="27012015133068">ICT</option>
+                        <option value="22112015135533">
+                          Multiple subjects
+                        </option>
+                        <option value="11092014110100">
+                          Religion/ Islamiat
+                        </option>
+                        <option value="26012015238360">Social Science</option>
+                        <option value="22112015135783">2 Subjects</option>
+                        <option value="22112015137094">3 Subjects</option>
+                        <option value="22112015134671">4 Subjects</option>
+                        <option value="22112015134909">All Subject</option>
+                        <option value="5082014215120">Bangla</option>
+                        <option value="5082014220090">English</option>
+                        <option value="5082014215500">Math</option>
+                        <option value="26012015239225">Art</option>
+                        <option value="5082014217230">Accounting</option>
+                        <option value="5082014218400">Biology</option>
+                        <option value="5082014214860">Chemistry</option>
+                        <option value="5082014216200">Civics</option>
+                        <option value="5082014216950">Computer Science</option>
+                        <option value="15102015231183">Economics</option>
+                        <option value="5082014216890">
+                          English Literature
+                        </option>
+                        <option value="5082014222860">Finance</option>
+                        <option value="16032015010910">General Science</option>
+                        <option value="5082014218230">Higher Math</option>
+                        <option value="5082014222210">History</option>
+                        <option value="5082014219930">Islamic Studies</option>
+                        <option value="5082014218940">Law</option>
+                        <option value="5082014222330">Phsychology</option>
+                        <option value="5082014219540">Physics</option>
+                        <option value="5082014222090">Sociology</option>
+                        <option value="5082014214970">Statistics</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-6 mb-4 d-flex justify-content-center">
+                      <button class="button-64" role="button">Submit</button>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                      <button class="button-33" role="button">
+                        Get call from Tutor
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <img
+              class="img-fluid"
+              id="section2_image"
+              src="http://bdtutors.com/cmsfiles/images/banner3(1).jpg"
+              alt="walpaper"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------search section----------------->
+
+    <footer class="footer-section mt-5">
+      <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="cta-text">
+                  <h4>Find us</h4>
+                  <span>Mohammadpur,Dhaka-1206</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-phone"></i>
+                <div class="cta-text">
+                  <h4>Call us</h4>
+                  <span>01751686106</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="far fa-envelope-open"></i>
+                <div class="cta-text">
+                  <h4>Mail us</h4>
+                  <span>Shova@gmail.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="index.html"
+                    ><img src="./image/brand.png" class="img-fluid" alt="logo"
+                  /></a>
+                  <div class="text-white">Trust Tution BD</div>
+                </div>
+                <div class="footer-text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consec tetur adipisicing elit,
+                    sed do eiusmod tempor incididuntut consec tetur adipisicing
+                    elit,Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Useful Links</h3>
+                </div>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Search Tutor</a></li>
+                  <li><a href="#">Request Tutor</a></li>
+                  <li><a href="#">Premium Tutor</a></li>
+                  <li><a href="#">Tution</a></li>
+                  <li><a href="#">(FAQ)Help</a></li>
+                  <li><a href="#">SignIn</a></li>
+                  <li><a href="#">Signup</a></li>
+                  <li><a href="#">Contact us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Subscribe</h3>
+                </div>
+                <div class="footer-text mb-25">
+                  <p>
+                    Don’t miss to subscribe to our new feeds, kindly fill the
+                    form below.
+                  </p>
+                </div>
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input type="text" placeholder="Email Address" />
+                    <button><i class="fab fa-telegram-plane"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <p>
+                  Copyright &copy; 2018, All Right Reserved <a href="">Shova</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Policy</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/a3324cfcf7.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
